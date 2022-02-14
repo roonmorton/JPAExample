@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.roni.jpaexmple.util;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+/**
+ *
+ * @author ron
+ */
+public class EntityManagerUtil {
+    
+    public static EntityManager getEntityManager(){
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA_PU");
+        return factory.createEntityManager();
+    }
+    
+    
+}
